@@ -21,8 +21,10 @@ gem "turbo-rails", ">= 0.7.11"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails", ">= 0.4.0"
 
+gem 'slim-rails'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder", "~> 2.7"
+# gem "jbuilder", "~> 2.7"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -60,4 +62,7 @@ group :test do
   # gem "capybara", ">= 3.26"
   # gem "selenium-webdriver"
   # gem "webdrivers"
+  #
+  # Not compatible w/ Rails 7 Alpha version
+  # gem 'minitest-rails'
 end
