@@ -1,12 +1,13 @@
 p#notice = notice
 
-p
-  strong Name:
-  = @room.name
+= turbo_frame_tag :room
+  p
+    strong Name:
+    = @room.name
 
-=> link_to 'Edit', edit_room_path(@room)
-'|
-=< link_to 'Back', rooms_path
+  => link_to 'Edit', [:edit, @room]
+  '|
+  =< link_to 'Back', :rooms
 
 #messages = render @room.messages
 
