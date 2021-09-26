@@ -12,3 +12,5 @@ p#notice = notice
 #messages = render @room.messages
 
 = link_to 'New Message', [:new, @room, :message]
+
+= turbo_frame_tag :new_message, src: [:new, @room, :message], target: :_top
