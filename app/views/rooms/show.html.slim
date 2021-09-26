@@ -7,7 +7,7 @@ p#notice = notice
 
   => link_to 'Edit', [:edit, @room]
   '|
-  =< link_to 'Back', :rooms
+  =< link_to 'Back', :rooms, data: { turbo_frame: :_top }
 
 #messages = render @room.messages
 
