@@ -1,4 +1,6 @@
-= form_for [@room, @message] do |f|
+= form_for [@room, @message],
+  data: { controller: 'reset-form',
+  action: 'turbo:submit-end->reset-form#reset' } do |f|
   .field
     = f.text_field :content
     = f.submit
