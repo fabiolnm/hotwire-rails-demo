@@ -128,6 +128,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5.0.beta3)
     rake (13.0.6)
+    redis (4.4.0)
     reline (0.2.7)
       io-console (~> 0.5)
     slim (4.1.0)
@@ -174,6 +175,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (>= 2.3.3)
   rails (~> 7.0.0.alpha2)
+  redis (~> 4.0)
   slim-rails
   stimulus-rails (>= 0.4.0)
   turbo-rails (>= 0.7.11)
