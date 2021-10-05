@@ -3,9 +3,7 @@ p#notice = notice
 = turbo_stream_from @room
 
 = turbo_frame_tag :room
-  p
-    strong Name:
-    = @room.name
+  = render @room
 
   => link_to 'Edit', [:edit, @room]
   '|
